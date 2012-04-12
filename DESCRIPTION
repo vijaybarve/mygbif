@@ -1,0 +1,14 @@
+Package: mygbif
+Type: Package
+Title: Get count of records
+Version: 1.0
+Date: 2012-04-11
+Author: Vijay Barve
+Maintainer: Vijay Barve <vijay.barve@gmail.com>
+Description: Access GBIF API to find out how many records are present for a taxon.
+License: CC
+Imports:
+    XML,
+    RCurl (>= 1.6)
+Collate:
+    'gbifcount.r'

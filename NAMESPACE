@@ -1,0 +1,6 @@
+export(gbifcount)
+export(getgbifcountxml)
+export(procgbifcountxml)
+export(sgbifcount)
+import(RCurl)
+import(XML)
