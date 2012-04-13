@@ -11,8 +11,8 @@
   getgbifcountxml - Description
 }
 \examples{
-\dontrun{
-getgbifcountxml('Danaus plexippus')
+{
+getgbifcountxml("Danaus plexippus")
 }
 }
 

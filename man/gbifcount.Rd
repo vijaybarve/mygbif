@@ -11,9 +11,9 @@
   gbifcount - Description
 }
 \examples{
-\dontrun{
-gbifcount('Graphium *')
-gbifcount('Danaus plexippus')
+{
+gbifcount("Graphium *")
+gbifcount("Danaus plexippus")
 }
 }
 

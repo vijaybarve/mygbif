@@ -1,9 +1,9 @@
 #'getgbifcountxml - Description
 #'@import RCurl
-#'@param scname scientitic name 
+#'@param scname scientitic name
 #'@export
-#'@examples \dontrun{
-#'getgbifcountxml('Danaus plexippus')
+#'@examples {
+#'getgbifcountxml("Danaus plexippus")
 #'}
 getgbifcountxml <-function (scname){
  url="http://data.gbif.org/ws/rest/occurrence/count?scientificname="
@@ -14,7 +14,7 @@ getgbifcountxml <-function (scname){
 
 #'procgbifcountxml - Description
 #'@import XML
-#'@param outxml XML returned by GBIF Count API 
+#'@param outxml XML returned by GBIF Count API
 #'@export
 #'@examples \dontrun{
 #'procgbifcountxml(outxml)
@@ -27,11 +27,11 @@ procgbifcountxml <-function (outxml){
 }
 
 #'gbifcount - Description
-#'@param scname scientitic name 
+#'@param scname scientitic name
 #'@export
-#'@examples \dontrun{
-#'gbifcount('Graphium *')
-#'gbifcount('Danaus plexippus')
+#'@examples {
+#'gbifcount("Graphium *")
+#'gbifcount("Danaus plexippus")
 #'}
 gbifcount <-function (scname){
  tmpxml=getgbifcountxml(scname)
@@ -41,11 +41,11 @@ gbifcount <-function (scname){
 
 #'sgbifcount - Description
 #'@import RCurl XML
-#'@param scname scientitic name 
+#'@param scname scientitic name
 #'@export
-#'@examples \dontrun{
-#'sgbifcount('Graphium antiphates')
-#'sgbifcount('Danaus *')
+#'@examples {
+#'sgbifcount("Graphium antiphates")
+#'sgbifcount("Danaus *")
 #'}
 sgbifcount <-function (scname){
  url="http://data.gbif.org/ws/rest/occurrence/count?scientificname="

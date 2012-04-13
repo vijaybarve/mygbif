@@ -11,9 +11,9 @@
   sgbifcount - Description
 }
 \examples{
-\dontrun{
-sgbifcount('Graphium antiphates')
-sgbifcount('Danaus *')
+{
+sgbifcount("Graphium antiphates")
+sgbifcount("Danaus *")
 }
 }
 
